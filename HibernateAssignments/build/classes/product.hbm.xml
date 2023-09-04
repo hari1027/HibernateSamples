@@ -1,0 +1,16 @@
+<!DOCTYPE hibernate-mapping PUBLIC 
+"-//Hibernate/Hibernate Mapping DTD//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+
+
+    <hibernate-mapping>
+	
+	<class name="com.example.Product" table="helloproduct">
+	<id name="productId" column="sid"></id>
+	<property name="companyName" column="scompanyName" not-null="false" />
+	<property name="productName" column="sproductName" not-null="false" />
+	<property name="productPrice" column="sPrice" />
+	<property name="quantity" column="squantity" />
+	
+	</class>
+	</hibernate-mapping>
